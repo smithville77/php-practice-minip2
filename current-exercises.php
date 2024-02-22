@@ -24,3 +24,15 @@ try {
   var_dump($exerciseList)
 
 ?>
+
+<?php 
+foreach ($exerciseList as $exercise) :
+?>
+
+<p><?php echo $exercise['exerciseName'] ?></p>
+<p><?php echo $exercise['weight'] ?></p>
+<p><?php echo $exercise['reps'] ?></p>
+<p><?php echo $exercise['sets'] ?></p>
+
+
+<?php endforeach ?>
