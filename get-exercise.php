@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/connection.php';
 
-if(isset($_POST['select-exercise'])) {
+if (isset($_POST['select-exercise'])) {
     $exerciseName = $_POST['select-exercise'];
 
     $stmt = $conn->prepare("SELECT `id`, `exerciseName`, `sets`, `reps`, `weight`, `rpe` FROM `exercises` WHERE `exerciseName` = :exerciseName");
@@ -24,11 +24,11 @@ if(isset($_POST['select-exercise'])) {
 ?>
 <form method="post">
 
-<select name="select-exercise" id="select-exercise">
-    <option value=""></option>
-    <option value="Bench Press">Bench Press</option>
-    <option value="Squat">Squat</option>
-</select>
-<input type="submit" />
+    <select name="select-exercise" id="select-exercise">
+        <option value=""></option>
+        <option value="Bench Press">Bench Press</option>
+        <option value="Squat">Squat</option>
+    </select>
+    <input type="submit" />
 
 </form>
