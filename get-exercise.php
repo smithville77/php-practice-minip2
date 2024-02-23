@@ -19,4 +19,3 @@ foreach ($exerciseList as $exercise) {
     echo "RPE: " . $exercise['rpe'] . "<br>";
     echo "<hr>";
 }
-?>
