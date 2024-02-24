@@ -26,12 +26,12 @@ $newExercise = [];
 ?>
 <p>Select an exercise to add from the dropdown below</p>
 <form method="post">
-<select>
-    <?php foreach ($uniqueExerciseArray as $exercise) : ?>
-        <option value='<?php echo $exercise?>'>
-            <?php echo $exercise['exerciseName'] ?>
-        </option>
-    <?php endforeach ?>
-    <input type="submit">
-</select>
+    <select>
+        <?php foreach ($uniqueExerciseArray as $exercise) : ?>
+            <option value='<?php echo $exercise ?>'>
+                <?php echo $exercise['exerciseName'] ?>
+            </option>
+        <?php endforeach ?>
+        <input type="submit">
+    </select>
 </form>
