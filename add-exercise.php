@@ -24,7 +24,7 @@ $newExercise = [];
 
 
 ?>
-<p>Select an exercise to add from the dropdown below</p>
+<p>Select an exercise to add from the dropdown menu below</p>
 <form method="post">
     <select>
         <?php foreach ($uniqueExerciseArray as $exercise) : ?>
