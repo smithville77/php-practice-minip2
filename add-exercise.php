@@ -7,7 +7,6 @@ $stmt->execute();
 
 $listOfExercises = $stmt->fetchAll();
 
-
 // create list of unique exercises
 $uniqueExerciseArray = [];
 foreach ($listOfExercises as $exercise) {
@@ -18,10 +17,7 @@ foreach ($listOfExercises as $exercise) {
 
 var_dump($uniqueExerciseArray);
 
-
 $newExercise = [];
-
-
 
 ?>
 <p>Select an exercise to add from the dropdown menu below</p>
