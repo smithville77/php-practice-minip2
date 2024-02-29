@@ -5,7 +5,7 @@ require_once __DIR__ . '/connection.php';
 if (isset($_POST['select-exercise'])) {
     $exerciseName = $_POST['select-exercise'];
 
-    $stmt = $conn->prepare("SELECT `id`, `exerciseName`, `sets`, `reps`, `weight`, `rpe` FROM `exercises` WHERE `exerciseName` = :exerciseName");
+    $stmt = $conn->prepare("SELECT `id`, `exerciseName`, `sets`, `reps`, `weight` FROM `exercises` WHERE `exerciseName` = :exerciseName");
     $stmt->bindParam(':exerciseName', $exerciseName);
     $stmt->execute();
     $exerciseList = $stmt->fetchAll();
@@ -17,7 +17,6 @@ if (isset($_POST['select-exercise'])) {
         echo "Sets: " . $exercise['sets'] . "<br>";
         echo "Reps: " . $exercise['reps'] . "<br>";
         echo "Weight: " . $exercise['weight'] . "<br>";
-        echo "RPE: " . $exercise['rpe'] . "<br>";
         echo "<hr>";
     }
 }
