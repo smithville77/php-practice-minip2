@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 require_once './connection.php';
 // check the user login status
 
