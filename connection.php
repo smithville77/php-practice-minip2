@@ -20,8 +20,6 @@ try {
 
     $config = new Config($conn);
     $auth = new Auth($conn, $config);
-
-
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
     die();
