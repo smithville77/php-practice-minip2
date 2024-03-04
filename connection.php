@@ -18,6 +18,8 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
 
+
+    
     $config = new Config($conn);
     $auth = new Auth($conn, $config);
 } catch (PDOException $e) {
